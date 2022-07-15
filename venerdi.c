@@ -1,6 +1,7 @@
-#include <stdio.h>
+#include <stdio.h> 
 
-/*Dichiarazione delle funzioni che verranno implementate di seguito*/
+/*Dichiarazione iniziale delle funzioni che verranno implementate di seguito nell'esercizio*/
+
 void menu ();
 void moltiplica ();
 void dividi ();
@@ -11,16 +12,15 @@ int main ()
 
 {
 
-
     char scelta = '\0'; //errore: parentesi graffe 
 
 
 /* Costrutto do-while: ci serve per non farci uscire dal programma 
-in caso sbagliassimo a digitare una delle opzioni date */
+in caso sbagliassimo a digitare una delle opzioni date dall'esercizio */
 
     do{
     menu ();
-    scanf ("%c", &scelta); // modifica di %d, che sta per intero, in %c che sta per char
+    scanf ("%c", &scelta); // modifica di %d, che sta per intero, in %c che sta per char.
 
     switch (scelta)
     {
@@ -35,7 +35,7 @@ in caso sbagliassimo a digitare una delle opzioni date */
                 break;
 
 
- // Default, in caso di digitaione di un  carattere errato
+ // Default, in caso di digitaione di un carattere errato
                 default:
                 printf("Ritenta\n");
                 break;
@@ -57,7 +57,7 @@ void menu ()
 }
 
 /*Cambiato tutto da int a float per rendere piu efficace le operazioni
-e da %d a %f per far si che l-input possa essere anche un valore di tipo
+e da %d a %f per far si che l'input possa essere anche un valore di tipo
 float e non solo un intero*/
 
 // Implementata funzione moltiplica()
